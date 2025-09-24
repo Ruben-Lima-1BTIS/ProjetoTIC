@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Ruben</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gradient-to-br from-sky-100 via-sky-200 to-sky-400 min-h-screen">
+  <header class="h-auto width-full">
+    <div class="bg-sky-800 text-white p-4 flex items-center justify-between">
+      <a href="index.html" aria-label="Home">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-white hover:text-sky-300">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125h3.375a1.125 1.125 0 001.125-1.125V15.75c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v4.125c0 .621.504 1.125 1.125 1.125h3.375a1.125 1.125 0 001.125-1.125V9.75" />
+				</svg>
+			</a>
+      <nav>
+        <div class="">
+          <a href="CV.html" class="px-4 py-2 bg-white text-black rounded-xl hover:bg-gray-300">CV</a>
+          <a href="Track.html" class="px-4 py-2 bg-white text-black rounded-xl hover:bg-gray-300">Atletismo</a>
+          <a href="Music.html" class="px-4 py-2 bg-white text-black rounded-xl hover:bg-gray-300">Música</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="max-w-4xl mx-auto mt-4 mb-2 flex justify-start">
+      <a href="index.html" class="flex items-center gap-2 bg-sky-800 text-white px-4 py-2 rounded-xl shadow hover:bg-sky-700 transition-colors">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+      </svg>
+      Voltar
+      </a>
+    </div>
+    <div class="max-w-4xl mx-auto mt-8 mb-4 flex flex-col items-center justify-center">
+      <div class="flex flex-col items-center">
+        <div class="bg-sky-800 rounded-full p-4 shadow-lg mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-12 h-12">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-2v13" />
+            <circle cx="7" cy="19" r="3" fill="white" stroke="none" />
+            <circle cx="19" cy="18" r="3" fill="white" stroke="none" />
+          </svg>
+        </div>
+        <h1 class="text-3xl font-bold text-sky-800 mb-2">O Meu Espaço Musical</h1>
+        <p class="text-gray-700 text-center max-w-xl">Descobre um pouco sobre o meu gosto musical!</p>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto my-8 bg-white shadow-lg rounded-xl p-8">
+      <div class="bg-sky-700 text-white p-4 rounded-xl shadow mb-6 flex items-center justify-center">
+        <h2 class="text-2xl font-semibold text-white text-center w-full">Os meus artistas, albums e músicas favoritas</h2>
+      </div>
+      <section class="max-w-5xl mx-auto mt-8 space-y-8">
+        <h3 class="text-lg font-bold text-sky-800 mb-4 border-b-2 border-sky-200 pb-2 flex items-center gap-2">
+          <svg xmlns='http://www.w3.org/2000/svg'class='w-6 h-6 text-sky-800' fill='none'viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5.121 17.804A13.937 13.937 0 0112 15c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0z' />
+          </svg>Artists
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="flex flex-col md:flex-row bg-white rounded-xl shadow p-6 items-center hover:shadow-xl transition-shadow duration-300">
+            <img src="images/drake.webp" alt="Drake" class="w-32 h-32 object-cover rounded-full mb-4 md:mb-0 md:mr-8 border-4 border-sky-200">
+            <div>
+              <h2 class="text-2xl font-bold text-sky-800 mb-2">Drake</h2>
+              <p class="text-gray-700 mb-2">Minhas músicas favoritas dele:</p>
+              <ul class="list-disc list-inside text-gray-700">
+                <li>DIE TRYING</li>
+                <li>Doing It Wrong</li>
+                <li>Trust Issues</li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row bg-white rounded-xl shadow p-6 items-center hover:shadow-xl transition-shadow duration-300">
+            <img src="images/pnd.jpg" alt="PartyNextDoor" class="w-32 h-32 object-cover rounded-full mb-4 md:mb-0 md:mr-8 border-4 border-sky-200">
+            <div>
+              <h2 class="text-2xl font-bold text-sky-800 mb-2">PartyNextDoor</h2>
+              <p class="text-gray-700 mb-2">Minhas músicas favoritas dele:</p>
+              <ul class="list-disc list-inside text-gray-700">
+                <li>Come and See Me</li>
+                <li>Options</li>
+                <li>R e s e n t m e n t</li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row bg-white rounded-xl shadow p-6 items-center hover:shadow-xl transition-shadow duration-300">
+            <img src="images/frankOcean.jpg" alt="Frank Ocean" class="w-32 h-32 object-cover rounded-full mb-4 md:mb-0 md:mr-8 border-4 border-sky-200">
+            <div>
+              <h2 class="text-2xl font-bold text-sky-800 mb-2">Frank Ocean</h2>
+              <p class="text-gray-700 mb-2">Minhas músicas favoritas dele:</p>
+              <ul class="list-disc list-inside text-gray-700">
+                <li>Pink Matter</li>
+                <li>Seigfried</li>
+                <li>Self Control</li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row bg-white rounded-xl shadow p-6 items-center hover:shadow-xl transition-shadow duration-300">
+            <img src="images/theWeeknd.avif" alt="The Weeknd" class="w-32 h-32 object-cover rounded-full mb-4 md:mb-0 md:mr-8 border-4 border-sky-200">
+            <div>
+              <h2 class="text-2xl font-bold text-sky-800 mb-2">The Weeknd</h2>
+              <p class="text-gray-700 mb-2">Minhas músicas favoritas dele:</p>
+              <ul class="list-disc list-inside text-gray-700">
+                <li>Or Nah</li>
+                <li>One Of The Girls</li>
+                <li>Call Out My Name</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="my-8 border-t-2 border-sky-200"></div>
+        <h3 class="text-lg font-bold text-sky-800 mb-4 border-b-2 border-sky-200 pb-2 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-sky-800">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-2v13" />
+            <circle cx="7" cy="19" r="3" fill="currentColor" stroke="none" />
+            <circle cx="19" cy="18" r="3" fill="currentColor" stroke="none" />
+          </svg>
+          Albums
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="flex flex-row bg-white rounded-xl shadow p-6 items-center hover:shadow-xl transition-shadow duration-300">
+            <img src="images/Take_Care.jpg" alt="Take Care" class="w-32 h-32 object-cover rounded-lg mb-4 md:mb-0 md:mr-8 border-4 border-sky-200">
+            <div>
+              <h2 class="text-xl font-bold text-sky-800 mb-2">Take Care - Drake</h2>
+                <p class="text-gray-700 mb-2">Melhores músicas do álbum: <br>Marvins Room;<br>Doing It Wrong;<br>Practice.</p>
+              </div>
+              </div>
+              <div class="flex flex-row bg-white rounded-xl shadow p-6 items-center hover:shadow-xl transition-shadow duration-300">
+              <img src="images/More_Life.jpg" alt="More Life" class="w-32 h-32 object-cover rounded-lg mb-4 md:mb-0 md:mr-8 border-4 border-sky-200">
+              <div>
+                <h2 class="text-xl font-bold text-sky-800 mb-2">More Life - Drake</h2>
+                <p class="text-gray-700 mb-2">Melhores músicas do álbum: <br>Passionfruit;<br>Teenage Fever;<br>Lose You.</p>
+              </div>
+              </div>
+              <div class="flex flex-row bg-white rounded-xl shadow p-6 items-center hover:shadow-xl transition-shadow duration-300">
+              <img src="images/Channel_ORANGE.jpg" alt="channel ORANGE" class="w-32 h-32 object-cover rounded-lg mb-4 md:mb-0 md:mr-8 border-4 border-sky-200">
+              <div>
+                <h2 class="text-xl font-bold text-sky-800 mb-2">channel ORANGE - Frank Ocean</h2>
+                <p class="text-gray-700 mb-2">Melhores músicas do álbum: <br>Pink Matter;<br>Thinkin Bout You;<br>Lost.</p>
+              </div>
+              </div>
+              <div class="flex flex-row bg-white rounded-xl shadow p-6 items-center hover:shadow-xl transition-shadow duration-300">
+              <img src="images/BBTM_Cover.png" alt="Beauty Behind The Madness" class="w-32 h-32 object-cover rounded-lg mb-4 md:mb-0 md:mr-8 border-4 border-sky-200">
+              <div>
+                <h2 class="text-xl font-bold text-sky-800 mb-2">Beauty Behind The Madness - The Weeknd</h2>
+                <p class="text-gray-700 mb-2">Melhores músicas do álbum: <br>Earned It;<br>Often;<br>Can't Feel My Face.</p>
+            </div>
+          </div>
+        </div>
+        <div class="my-8 border-t-2 border-sky-200"></div>
+        <h3 class="text-lg font-bold text-sky-800 mb-4 border-b-2 border-sky-200 pb-2 flex items-center gap-2">
+          <h3 class="text-lg font-bold text-sky-800 mb-4 border-b-2 border-sky-200 pb-2 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-sky-800">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-2v13" />
+            <circle cx="7" cy="19" r="3" fill="currentColor" stroke="none" />
+            <circle cx="19" cy="18" r="3" fill="currentColor" stroke="none" />
+          </svg>Songs</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="flex flex-row bg-white rounded-xl shadow p-6 items-center hover:shadow-xl transition-shadow duration-300 h-32">
+            <iframe data-testid="embed-iframe"
+              style="border-radius:12px; width:100%; height:100%; min-height:80px;"
+              src="https://open.spotify.com/embed/track/2XHzzp1j4IfTNp1FTn7YFg?utm_source=generator&theme=0"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="flex flex-row bg-white rounded-xl shadow p-6 items-center hover:shadow-xl transition-shadow duration-300 h-32">
+            <iframe data-testid="embed-iframe"
+              style="border-radius:12px; width:100%; height:100%; min-height:80px;"
+              src="https://open.spotify.com/embed/track/0NUqi0ps17YpLUC3kgsZq0?utm_source=generator"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="flex flex-row bg-white rounded-xl shadow p-6 items-center hover:shadow-xl transition-shadow duration-300 h-32">
+            <iframe data-testid="embed-iframe"
+              style="border-radius:12px; width:100%; height:100%; min-height:80px;"
+              src="https://open.spotify.com/embed/track/5mCPDVBb16L4XQwDdbRUpz?utm_source=generator"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="flex flex-row bg-white rounded-xl shadow p-6 items-center hover:shadow-xl transition-shadow duration-300 h-32">
+            <iframe data-testid="embed-iframe"
+              style="border-radius:12px; width:100%; height:100%; min-height:80px;"
+              src="https://open.spotify.com/embed/track/047fCsbO4NdmwCBn8pcUXl?utm_source=generator"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </section>
+      <div class="my-8 border-t-2 border-sky-200"></div>
+      <h3 class="text-lg font-bold text-sky-800 mb-4 border-b-2 border-sky-200 pb-2 flex items-center justify-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-sky-800">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-2v13" />
+          <circle cx="7" cy="19" r="3" fill="currentColor" stroke="none" />
+          <circle cx="19" cy="18" r="3" fill="currentColor" stroke="none" />
+        </svg>
+        Playlist
+      </h3>
+      <div class="flex justify-center">
+        <div class="flex flex-col items-center bg-white rounded-xl shadow p-6 w-full max-w-2xl hover:shadow-xl transition-shadow duration-300">
+          <iframe data-testid="embed-iframe" style="border-radius:12px; width:100%; min-height:352px;" src="https://open.spotify.com/embed/playlist/7lvqoMSMUGfwKYw8dgNHkY?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+<footer class="h-auto w-full bg-sky-800 text-white p-4 mt-8 bottom-0">
+  <div class="text-center">
+    <p>&copy; 2025 Ruben Lima.</p>
+			<p>July 2025</p>
+  </div>
+</footer>
+</html>

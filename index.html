@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Projeto Ruben</title>
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gradient-to-br from-from-white via-sky-100 to-sky-300 min-h-screen">
+	<header class="h-auto width-full">
+		<div class="bg-sky-800 text-white p-4 flex items-center justify-between">
+			<a href="index.html" aria-label="Home">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-white hover:text-sky-300">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125h3.375a1.125 1.125 0 001.125-1.125V15.75c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v4.125c0 .621.504 1.125 1.125 1.125h3.375a1.125 1.125 0 001.125-1.125V9.75" />
+				</svg>
+			</a>
+			<nav>
+				<div class="">
+					<a href="CV.html" class="px-4 py-2 bg-white text-black rounded-xl hover:bg-gray-300">CV</a>
+					<a href="Track.html" class="px-4 py-2 bg-white text-black rounded-xl hover:bg-gray-300">Atletismo</a>
+					<a href="Music.html" class="px-4 py-2 bg-white text-black rounded-xl hover:bg-gray-300">Música</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="max-w-4xl mx-auto mt-8 mb-4 flex flex-col items-center justify-center">
+			<div class="flex flex-col items-center">
+				<div class="bg-sky-800 rounded-full p-4 shadow-lg mb-2">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-12 h-12">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0h6" />
+					</svg>
+				</div>
+				<h1 class="text-3xl font-bold text-sky-800 mb-2">Bem-vindo à minha página!</h1>
+				<p class="text-gray-700 text-center max-w-xl">Aqui podes ver o meu currículo, as minhas inspirações no atletismo e o meu gosto musical fantástico. <br> Explora cada secção para saberes mais sobre mim!</p>
+			</div>
+		</div>
+		<div class="max-w-7xl mx-auto my-8 bg-white shadow-lg rounded-xl p-8">
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<a href="CV.html" class="flex flex-col items-center bg-sky-100 rounded-xl p-6 shadow hover:shadow-xl transition-shadow duration-300 hover:bg-sky-200">
+					<svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-sky-800 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 4H7a2 2 0 01-2-2V6a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V20a2 2 0 01-2 2z" /></svg>
+					<h2 class="text-xl font-bold text-sky-800 mb-1">Curriculum Vitae</h2>
+					<p class="text-gray-700 text-center">Conhece o meu percurso académico e profissional.</p>
+				</a>
+				<a href="Track.html" class="flex flex-col items-center bg-sky-100 rounded-xl p-6 shadow hover:shadow-xl transition-shadow duration-300 hover:bg-sky-200">
+						<svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-sky-800 mb-2" viewBox="0 0 24 24" fill="none">
+							<rect x="10" y="5" width="4" height="10" rx="2" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+							<circle cx="12" cy="8" r="1" fill="#fff" stroke="currentColor" stroke-width="0.5"/>
+							<polygon points="12,2 14,5 10,5" fill="currentColor"/>
+							<polygon points="10,15 7,18 10,18" fill="currentColor"/>
+							<polygon points="14,15 17,18 14,18" fill="currentColor"/>
+							<polygon points="12,18 11,21 13,21" fill="#fbbf24"/>
+						</svg>
+					<h2 class="text-xl font-bold text-sky-800 mb-1">Atletismo</h2>
+					<p class="text-gray-700 text-center">Descobre os atletas que me inspiram e as suas histórias.</p>
+				</a>
+				<a href="Music.html" class="flex flex-col items-center bg-sky-100 rounded-xl p-6 shadow hover:shadow-xl transition-shadow duration-300 hover:bg-sky-200">
+					<svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-sky-800 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-2v13" /><circle cx="7" cy="19" r="3" fill="currentColor" stroke="none" /><circle cx="19" cy="18" r="3" fill="currentColor" stroke="none" /></svg>
+					<h2 class="text-xl font-bold text-sky-800 mb-1">Música</h2>
+					<p class="text-gray-700 text-center">Vê as minhas músicas, álbuns e artistas favoritos.</p>
+				</a>
+			</div>
+		</div>
+	</main>
+<footer class="h-auto w-full bg-sky-800 text-white p-4 mt-8 fixed bottom-0 left-0">
+	<div class="text-center">
+		<p>&copy; 2025 Ruben Lima.</p>
+		<p>July 2025</p>
+	</div>
+</footer>
+</body>
+</html>
