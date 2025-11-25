@@ -125,7 +125,7 @@
               <img src="images/Drake_-_Certified_Lover_Boy.png" alt="CLB" class="w-32 h-32 object-cover rounded-lg mb-4 md:mb-0 md:mr-8 border-4 border-sky-200">
               <div>
                 <h2 class="text-xl font-bold text-sky-800 mb-2">Certified Lover Boy - Drake</h2>
-                <p class="text-gray-700 mb-2">Melhores músicas do álbum: <br>Fair Trade;<br>TSU;<br>No Friends In The Industr.</p>
+                <p class="text-gray-700 mb-2">Melhores músicas do álbum: <br>Fair Trade;<br>TSU;<br>No Friends In The Industry.</p>
               </div>
               </div>
               <div class="flex flex-row bg-white rounded-xl shadow p-6 items-center hover:shadow-xl transition-shadow duration-300">
@@ -165,7 +165,7 @@
           <div class="flex flex-row bg-white rounded-xl shadow p-6 items-center hover:shadow-xl transition-shadow duration-300 h-32">
             <iframe data-testid="embed-iframe"
               style="border-radius:12px; width:100%; height:100%; min-height:80px;"
-              src="https://open.spotify.com/embed/track/57GsLpRtEtrzcPGPop20rS?utm_source=generator"
+              src="https://open.spotify.com/embed/track/4cRBqWBjuccCowYVHFlXK6?utm_source=generator"
               frameborder="0"
               allowfullscreen=""
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -185,7 +185,7 @@
           <div class="flex flex-row bg-white rounded-xl shadow p-6 items-center hover:shadow-xl transition-shadow duration-300 h-32">
             <iframe data-testid="embed-iframe"
               style="border-radius:12px; width:100%; height:100%; min-height:80px;"
-               src="https://open.spotify.com/embed/track/6LxSe8YmdPxy095Ux6znaQ?utm_source=generator"
+               src="https://open.spotify.com/embed/track/5Se32hEA9raeboZerywxka?utm_source=generator"
               frameborder="0"
               allowfullscreen=""
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -209,12 +209,47 @@
         </div>
       </div>
     </div>
+    <div id="speedMeme" class="fixed inset-0 flex flex-col items-center justify-center 
+     bg-[rgba(0,0,0,0.6)] z-[999] hidden">
+  <img src="images/tung.gif" 
+       class="w-80 rounded-2xl shadow-2xl border-4 border-white mb-4">
+  <p class="text-white text-xl font-bold drop-shadow-lg">
+    Slow down lil bro
+  </p>
+</div>
   </main>
+  <script>
+let lastScrollTop = 0;
+let cooldown = false;
+
+window.addEventListener("scroll", () => {
+  if (cooldown) return;
+
+  let speedMeme = document.getElementById("speedMeme");
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  let speed = Math.abs(scrollTop - lastScrollTop);
+
+  if (speed > 150) {
+    speedMeme.classList.remove("hidden");
+
+    setTimeout(() => {
+      speedMeme.classList.add("hidden");
+    }, 1000);
+
+    cooldown = true;
+    setTimeout(() => cooldown = false, 10000);
+  }
+
+  lastScrollTop = scrollTop;
+});
+</script>
+
 </body>
 <footer class="h-auto w-full bg-sky-800 text-white p-4 mt-8 bottom-0">
   <div class="text-center">
     <p>&copy; 2025 Ruben Lima.</p>
-			<p>July 2025</p>
+			<p>November 2025</p>
   </div>
 </footer>
 </html>
