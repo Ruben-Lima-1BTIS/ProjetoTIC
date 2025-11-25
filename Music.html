@@ -195,6 +195,7 @@
         </div>
       </section>
       <div class="my-8 border-t-2 border-sky-200"></div>
+      
       <h3 class="text-lg font-bold text-sky-800 mb-4 border-b-2 border-sky-200 pb-2 flex items-center justify-center gap-2">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-sky-800">
           <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-2v13" />
@@ -217,6 +218,13 @@
     Slow down lil bro
   </p>
 </div>
+<div id="konamiModal" class="fixed inset-0 flex flex-col items-center justify-center 
+     bg-[rgba(0,0,0,0.7)] z-[999] hidden">
+  <img src="images/weekndGIF.gif" id="konamiGif" class="w-full rounded-2xl shadow-2xl border-4 border-white mb-4">
+  <p class="text-white text-xl font-bold drop-shadow-lg text-center">
+    Surprise! 🕺 Dance party time!
+  </p>
+</div>
   </main>
   <script>
 let lastScrollTop = 0;
@@ -235,7 +243,7 @@ window.addEventListener("scroll", () => {
 
     setTimeout(() => {
       speedMeme.classList.add("hidden");
-    }, 1000);
+    }, 2500);
 
     cooldown = true;
     setTimeout(() => cooldown = false, 10000);
@@ -244,7 +252,35 @@ window.addEventListener("scroll", () => {
   lastScrollTop = scrollTop;
 });
 </script>
+<script>
+// Konami code sequence
+const konamiCode = ["ArrowUp","ArrowDown","ArrowLeft","ArrowRight","a","b"];
+let konamiPosition = 0;
 
+// Listen for key presses
+window.addEventListener("keydown", function(e) {
+    const key = e.key;
+    if(key === konamiCode[konamiPosition]) {
+        konamiPosition++;
+        if(konamiPosition === konamiCode.length) {
+            triggerKonamiEasterEgg();
+            konamiPosition = 0;
+        }
+    } else {
+        konamiPosition = 0;
+    }
+});
+
+function triggerKonamiEasterEgg() {
+    const modal = document.getElementById("konamiModal");
+    modal.classList.remove("hidden");
+
+    setTimeout(() => {
+        modal.classList.add("hidden");
+    }, 3000);
+
+}
+</script>
 </body>
 <footer class="h-auto w-full bg-sky-800 text-white p-4 mt-8 bottom-0">
   <div class="text-center">
@@ -253,3 +289,4 @@ window.addEventListener("scroll", () => {
   </div>
 </footer>
 </html>
+
